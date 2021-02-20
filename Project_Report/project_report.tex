@@ -1,0 +1,40 @@
+\documentclass[14pt, oneside, a4paper]{book}
+
+\usepackage{mystyle}
+\pagenumbering{alph}
+
+\begin{document}
+
+\frontmatter
+
+\input{./texFile/title.tex}
+\tableofcontents
+\listoffigures
+
+\mainmatter
+
+\chapter*{1\hspace{0.3 cm}The Introduction}
+\addcontentsline{toc}{chapter}{1\hspace{0.3 cm}The Introduction}
+\input{./texFile/introduction.tex}
+
+{\let\clearpage\relax\chapter*{3\hspace{0.3 cm} The Project Overview}}
+\addcontentsline{toc}{chapter}{3\hspace{0.3 cm} The Project Overview}
+\input{./texFile/project_descrption.tex}
+
+{\let\clearpage\relax\chapter*{4\hspace{0.3 cm} Project Diagram}}
+\addcontentsline{toc}{chapter}{4\hspace{0.3 cm} Project Diagram}
+\input{./texFile/diagram.tex}
+
+{\let\clearpage\relax\chapter*{5\hspace{0.3 cm} Project Implementation}}
+\addcontentsline{toc}{chapter}{5\hspace{0.3 cm} Project Implementation}
+\input{./texFile/activities.tex}
+
+{\let\clearpage\relax\chapter*{6\hspace{0.3 cm} Testing And Validation}}
+\addcontentsline{toc}{chapter}{6\hspace{0.3 cm} Testing And Validation}
+\input{./texFile/testing.tex}
+
+{\let\clearpage\relax\chapter*{7\hspace{0.3 cm} Future Development}}
+\addcontentsline{toc}{chapter}{7\hspace{0.3 cm} Future Development}
+\input{./texFile/conclusion.tex}
+
+\end{document}
